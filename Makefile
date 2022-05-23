@@ -6,7 +6,7 @@ PDF = $(BUILD)/thesis.pdf
 .PHONY: all prepare
 
 all: $(PDF)
-	-rm thesis.pdf
+	-rm -f thesis.pdf
 	ln -s $(PDF) thesis.pdf
 
 $(BUILD):
