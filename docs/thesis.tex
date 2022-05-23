@@ -1,0 +1,135 @@
+\input{includes}
+
+\begin{document}
+
+
+\begin{titlepage}
+\input{cover}
+\end{titlepage}
+
+% Copyright
+\clearpage
+\vspace*{\fill}
+\begin{minipage}{.9\textwidth}
+\centerline{Department of Management Science and Technology}
+\centerline{Athens University of Economics and Business}
+\centerline{Email: {\tt author's email}}
+\vspace{1cm}
+\centerline{Copyright 2019 Author's Name}
+\centerline{This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.}
+\end{minipage}
+\vfill % equivalent to \vspace{\fill}
+\clearpage
+
+% Supervisor
+\clearpage
+\vspace*{\fill}
+\begin{minipage}{.9\textwidth}
+\centerline{Supervised by Advisor's Name}
+\end{minipage}
+\vfill % equivalent to \vspace{\fill}
+\clearpage
+
+% Special acknowledgements
+\clearpage
+\vspace*{\fill}
+\begin{minipage}{.9\textwidth}
+\begin{flushright}
+Dedicated to ...
+\end{flushright}
+\end{minipage}
+\vfill % equivalent to \vspace{\fill}
+\clearpage
+
+\tableofcontents
+\clearpage
+
+\listoffigures
+\clearpage
+
+\listoftables
+\clearpage
+
+\input{acknowledgements}
+
+% International summary
+\input{abstract}
+\clearpage
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\thepage\ / \pageref{LastPage}}
+\fancyhead[R]{\it \rightmark}
+
+\pagenumbering{arabic}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Introduction}
+\label{ch:intro}
+
+\input{introduction}
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Background}
+\label{ch:background}
+
+\input{background}
+
+%\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Techniques}
+\label{ch:techniques}
+
+\input{techniques}
+
+%\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Implementation}
+\label{ch:Implementation}
+
+\input{implementation}
+%
+%\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Empirical Evaluation}
+\label{ch:evaluation}
+
+\input{evaluation}
+
+\chapter{Discussion and Implications}
+\label{ch:discussion}
+
+\input{discussion}
+
+\chapter{Related Work}
+\label{ch:related-work}
+
+\input{related-work}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Conclusion}
+\label{ch:conclusion}
+
+\input{conclusion}
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Your appendix
+% \appendix
+% \chapter*{Appendix I} \label{appendix}
+% \input{appendix}
+
+\clearpage
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliography{thesis-bib}
+\bibliographystyle{alpha}
+
+\chapter*{List of Publications}
+\input{publications}
+\end{document}
