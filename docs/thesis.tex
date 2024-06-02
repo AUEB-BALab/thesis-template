@@ -62,66 +62,26 @@ Dedicated to ...
 \fancyhead[R]{\it \rightmark}
 
 \pagenumbering{arabic}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter{Introduction}
-\label{ch:intro}
-
-% Introduces the research topic, outlines the research problem, and states the thesis objectives and questions.
-% Provides a brief overview of the thesis structure.
-\input{introduction}
-
-\clearpage
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Background}
-\label{ch:background}
+\include{introduction}
 
-\input{background}
+\include{background}
 
-%\clearpage
+\include{methods}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Methods}
-\label{ch:methods}
+\include{implementation}
 
-\input{methods}
+\include{results}
 
-%\clearpage
+\include{discussion}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Implementation}
-\label{ch:Implementation}
-
-\input{implementation}
-%
-%\clearpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Results}
-\label{ch:results}
-
-\input{results}
-
-\chapter{Discussion and Implications}
-\label{ch:discussion}
-
-\input{discussion}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Conclusion}
-\label{ch:conclusion}
-
-\input{conclusion}
-
-\clearpage
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{conclusion}
 
 % Your appendix
 % \appendix
 % \chapter*{Appendix I} \label{appendix}
-% \input{appendix}
+% \include{appendix}
 
 \clearpage
 \addcontentsline{toc}{chapter}{Bibliography}
@@ -132,9 +92,7 @@ Dedicated to ...
 \input{publications}
 
 \appendix
-\chapter{Appendix A}
-\label{ch:appendixa}
 
-\input{appendixa}
+\include{appendix}
 
 \end{document}

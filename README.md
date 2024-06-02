@@ -26,6 +26,9 @@ In your writing please follow the
 Run `make` in the top-level directory.
 The result will appear in the `build` directory.
 
+Once the thesis text becomes substantial, consider using the
+`\includeonly` command for the chapter you're working on.
+
 ## Provenance and contributions
 This repository is based on a PhD thesis by Tushar Sharma,
 converted into a template by Thodoris Sotiropoulos, as
